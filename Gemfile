@@ -23,12 +23,12 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'figaro'
-# Use Pry for testing
-gem 'pry'
+
 # Use Faraday for GET and POST
 gem 'faraday'
 # Dot-env
 gem 'dotenv-rails'
+gem 'rb-readline'
 
 #Testing
 group :test do
@@ -50,6 +50,7 @@ end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'pry'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
